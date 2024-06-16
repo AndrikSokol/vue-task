@@ -39,7 +39,7 @@ const formSchema = toTypedSchema(
           z.string().transform((val) => (val === '' ? undefined : Number(val)))
         ])
         .optional(),
-      gender: z.enum(['male', 'female']).optional()
+      gender: z.enum([Gender.female, Gender.male]).optional()
     })
 
     .refine(
