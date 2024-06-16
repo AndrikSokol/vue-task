@@ -69,8 +69,8 @@ const gridClass = computed(() => {
         />
       </CardHeader>
       <CardContent class="flex flex-col gap-1">
-        <h2>{{ person.name.first + person.name.last }}</h2>
-        <h3>{{ person.gender }}</h3>
+        <h2>{{ person.name.first + ' ' + person.name.last }}</h2>
+        <h3>gender: {{ person.gender }}</h3>
         <h3>age: {{ person.dob.age }}</h3>
         <div class="flex gap-2 items-center justify-start">
           <EmailIcon class="text-black w-6 h-6" /><a
