@@ -8,7 +8,7 @@ import IconClear from './icons/IconClear.vue'
 import * as z from 'zod'
 
 import { FormControl, FormLabel, FormField, FormItem, FormMessage } from '@/components/ui/form'
-import { useFilterStore } from './store/store'
+import { useFilterStore } from '@/store/store'
 import { Gender } from '@/enums/gender.enum'
 import { computed } from 'vue'
 import { cn } from '@/lib/utils'
