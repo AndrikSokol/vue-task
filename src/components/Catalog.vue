@@ -45,9 +45,10 @@ const gridClass = computed(() => {
       <CardHeader class="flex justify-center items-center">
         <Skeleton class="h-16 w-16 rounded-full" />
       </CardHeader>
-      <CardContent class="flex flex-col gap-2">
+      <CardContent class="flex flex-col gap-1">
         <Skeleton class="h-6 w-1/3" />
         <Skeleton class="h-6 w-1/4" />
+        <Skeleton class="h-6 w-1/5" />
         <Skeleton class="h-6 w-full" />
         <Skeleton class="h-6 w-1/2" />
       </CardContent>
@@ -67,9 +68,10 @@ const gridClass = computed(() => {
           :alt="person.name.first + person.name.last"
         />
       </CardHeader>
-      <CardContent class="flex flex-col gap-2">
+      <CardContent class="flex flex-col gap-1">
         <h2>{{ person.name.first + person.name.last }}</h2>
         <h3>{{ person.gender }}</h3>
+        <h3>age: {{ person.dob.age }}</h3>
         <div class="flex gap-2 items-center justify-start">
           <EmailIcon class="text-black w-6 h-6" /><a
             :href="'mailto:' + person.email"

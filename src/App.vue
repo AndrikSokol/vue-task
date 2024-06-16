@@ -58,11 +58,11 @@ const filteredPersons = computed(() => {
     let filtered = allPersons.value.results
 
     if (state.filters.minAge) {
-      filtered = filtered.filter((person) => person.registered.age >= state.filters.minAge!)
+      filtered = filtered.filter((person) => person.dob.age >= state.filters.minAge)
     }
 
     if (state.filters.maxAge) {
-      filtered = filtered.filter((person) => person.dob.age <= state.filters.maxAge!)
+      filtered = filtered.filter((person) => person.dob.age <= state.filters.maxAge)
     }
 
     if (state.filters.gender) {
